@@ -2,14 +2,15 @@ import './styles.css';
 import React from 'react';
 import { FC } from 'react'
 import Navbar from './components/Navbar';
+import SubNavbar from './components/SubNavbar';
+import Body from './components/Body';
 
 const App: FC = () => {
   return (
     <div className="App">
       <Navbar />
-      <div className="text-lg text-cyan-700">
-        Hello world!
-      </div>
+      <SubNavbar />
+      <Body />
     </div>
   );
 }
