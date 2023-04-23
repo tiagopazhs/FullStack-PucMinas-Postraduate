@@ -5,9 +5,9 @@ import { FC } from 'react'
 const App: FC = () => {
   return (
     <div className="App">
-      <h1>
-        Hello World
-      </h1>
+      <div className="text-lg text-cyan-700">
+        Hello world!
+      </div>
     </div>
   );
 }
