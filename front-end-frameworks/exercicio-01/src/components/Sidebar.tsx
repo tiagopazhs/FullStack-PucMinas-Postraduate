@@ -3,7 +3,7 @@ import Topic from './Topic';
 
 const Sidebar: React.FC = () => {
   return (
-      <ul className="border border-teal-400 mb-7 h-screen">
+      <ul className="border border-teal-400">
         <Topic title="Section1" />
         <Topic title="Section2" />
         <Topic title="Section3" />
@@ -16,9 +16,6 @@ const Sidebar: React.FC = () => {
         <Topic title="Section10" />
         <Topic title="Section11" />
         <Topic title="Section12" />
-        <Topic title="Section13" />
-        <Topic title="Section14" />
-        <Topic title="Section15" />
       </ul>
   );
 };
