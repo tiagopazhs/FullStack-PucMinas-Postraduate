@@ -3,8 +3,8 @@ import Topic from './Topic';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="flex justify-between items-center py-4 bg-orange-200">
-      <div className="pl-9">
+    <nav className="flex justify-between items-center py-4 bg-teal-400">
+      <div className="pl-14">
         <img className='w-20' alt='ai logo' src='https://img.icons8.com/color/256/artificial-intelligence.png' />
       </div>
       <div className="flex flex-col items-center pr-4">
