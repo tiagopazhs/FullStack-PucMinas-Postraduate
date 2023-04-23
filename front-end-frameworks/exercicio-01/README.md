@@ -12,6 +12,7 @@
   <img src="https://raw.githubusercontent.com/tiagopazhs/WebFullStack-Postgraduate-PucMinas/main/front-end-frameworks/exercicio-01/public/docs/result.png" alt="sample" style="width: 85%">
 </p>
 
+
 <h2>Technologies</h2>
 <p>We used the following technologies to build this project:</p>
 <p align="center">
