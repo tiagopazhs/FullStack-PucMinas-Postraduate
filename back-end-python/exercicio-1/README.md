@@ -10,6 +10,7 @@ Saídas:
 ● O próximo mês é 7.
 ● O mês atual é par
 
+
 QUESTÃO 02: Crie a solução para a seguinte situação:
 “Registre um conjunto de 5 de temperaturas, e informe ao final:
 a menor temperaturas das informadas,
@@ -22,8 +23,10 @@ Saídas:
 ● A média das temperaturas entre 0 e 20 é 10,78
 ● São 2 temperaturas negativas e 3 positivas.
 
+
 QUESTÃO 03: Crie um código que receba um número digitado pelo usuário e verifique se esse valor é
 positivo, negativo ou igual a zero. A saída deve ser: "Valor Positivo", "Valor Negativo" ou "Igual a Zero".
+
 
 QUESTÃO 04: Crie um código que solicite a entrada de um número de meses que a pessoa deseja fazer
 controle alimentar e quantos quilos ela deseja perder e imprima a tabela de peso projetado perdidos mês
@@ -36,6 +39,7 @@ Exemplo: Caso o usuário informe que deseja emagrecer em 3 meses, sendo 12kg que
 Saídas:
 • Número de meses com valor correto do valor de quilos.
 
-QUESTÃO 05: ) Crie um código que pergunte ao usuário seu nome e sua idade. Em seguida verifique se a
+
+QUESTÃO 05: Crie um código que pergunte ao usuário seu nome e sua idade. Em seguida verifique se a
 idade é maior ou menor que 18, exiba da seguinte forma: Fulano é maior de 18 e tem XX Anos ou Fulano
 não é maior de 18 e tem XX Anos.
