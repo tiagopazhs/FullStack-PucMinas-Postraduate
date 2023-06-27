@@ -4,7 +4,7 @@
 <p>The purpose of the activity is to demonstrate knowledge in Python Back-end development, including Django, and to deliver the requirements described in the statement.</p>
 <h4>Proposal:</h4>
 <p align="center">
-  Create a basic record in Django using 6 fields.
+  Create a basic record in Django using 6 fields. The crud must contain: Create, reade all, read one, update and delete. 
 </p>
 
 <h4>Result:</h4>
