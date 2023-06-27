@@ -18,6 +18,6 @@
 <h2>Technologies</h2>
 <p>We used the following technologies to build this project:</p>
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=py,django,html,sqlite,postman,git" />
+    <img src="https://skillicons.dev/icons?i=py,django,html,sqlite,postman,vscode,git" />
 </p>
 
