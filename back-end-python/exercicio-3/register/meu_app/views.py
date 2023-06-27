@@ -27,3 +27,16 @@ def detalhes_aluno(request, aluno_id):
     aluno = get_object_or_404(Aluno, id=aluno_id)
     return render(request, 'detalhes_aluno.html', {'aluno': aluno})
 
+def atualizar_aluno(request, aluno_id):
+    aluno = get_object_or_404(Aluno, id=aluno_id)
+
+    if request.method == 'POST':
+        form = AlunoForm(request.POST, instance=aluno)
+        if form.is_valid():
+            form.save()
+            return redirect('detalhes_aluno', aluno_id=aluno.id)
+    else:
+        form = AlunoForm(instance=aluno)
+
+    return render(request, 'atualizar_aluno.html', {'form': form})
+
