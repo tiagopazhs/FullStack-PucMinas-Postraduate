@@ -22,8 +22,10 @@ urlpatterns = [
 ]
 
 from django.urls import path
+from meu_app.views import home
 from meu_app.views import hello_world
 
 urlpatterns = [
+    path('', home),
     path('hello/', hello_world),
 ]
