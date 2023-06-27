@@ -10,5 +10,7 @@
     <p>Idade: {{ aluno.idade }}</p>
     <!-- Botão de redirecionamento para a página de atualização -->
     <a href="{% url 'atualizar_aluno' aluno.id %}">Atualizar Aluno</a>
+    <!-- Botão de redirecionamento para deletar -->
+    <a href="{% url 'excluir_aluno' aluno.id %}">Deletar aluno</a>
 </body>
 </html>

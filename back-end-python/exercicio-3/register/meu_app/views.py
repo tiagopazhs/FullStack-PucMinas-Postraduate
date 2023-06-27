@@ -40,3 +40,7 @@ def atualizar_aluno(request, aluno_id):
 
     return render(request, 'atualizar_aluno.html', {'form': form})
 
+def excluir_aluno(request, aluno_id):
+    aluno = get_object_or_404(Aluno, pk=aluno_id)
+    aluno.delete()
+    return redirect('lista_alunos')
