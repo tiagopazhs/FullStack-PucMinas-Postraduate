@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from django.http import HttpResponse
 from meu_app.forms import AlunoForm
+from meu_app.models import Aluno
 
 def home(request):
     return HttpResponse("Esta é a home!")
@@ -17,4 +19,8 @@ def cadastrar_aluno(request):
     else:
         form = AlunoForm()
     return render(request, 'cadastrar_aluno.html', {'form': form})
+
+def lista_alunos(request):
+    alunos = Aluno.objects.all()
+    return render(request, 'lista_alunos.html', {'alunos': alunos})
 
