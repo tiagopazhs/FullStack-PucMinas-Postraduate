@@ -1,5 +1,4 @@
-from django.shortcuts import render
-from django.shortcuts import redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
 from meu_app.forms import AlunoForm
 from meu_app.models import Aluno
@@ -23,4 +22,8 @@ def cadastrar_aluno(request):
 def lista_alunos(request):
     alunos = Aluno.objects.all()
     return render(request, 'lista_alunos.html', {'alunos': alunos})
+
+def detalhes_aluno(request, aluno_id):
+    aluno = get_object_or_404(Aluno, id=aluno_id)
+    return render(request, 'detalhes_aluno.html', {'aluno': aluno})
 

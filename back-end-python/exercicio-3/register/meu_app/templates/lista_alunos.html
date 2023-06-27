@@ -8,7 +8,7 @@
     <h1>Lista de Alunos</h1>
     <ul>
         {% for aluno in alunos %}
-        <li>{{ aluno.nome }}</li>
+        <li><a href="{% url 'detalhes_aluno' aluno.id %}">{{ aluno.nome }}</a></li>
         {% endfor %}
     </ul>
 </body>
