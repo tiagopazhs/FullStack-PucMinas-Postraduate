@@ -40,9 +40,10 @@
  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlBw6CWhh8QRTrRNotMsQGiAJJe67dzeUfLXMMzAqZ3o5zzTjJL5gTuhstRcLAjYD-vI&usqp=CAU" alt="sample" style="width: 80%"> 
 </p>
 <pre>
-<h1>Introdução ao Pandas: Uma Poderosa Biblioteca Python para Análise de Dados</h1>
+<h1>Introdução ao Pandas: Uma Poderosa Biblioteca
+ Python para Análise de Dados</h1>
 
-Introdução:
+<h5>Introdução:</h5>
 
 O Python é uma das linguagens de programação mais populares entre cientistas de dados, analistas e 
 desenvolvedores de software. Uma das razões para essa popularidade é a vasta coleção de bibliotecas
@@ -50,21 +51,21 @@ disponíveis, que permitem aos usuários estender as funcionalidades básicas da
 problemas específicos de forma eficiente. Neste artigo, vamos explorar a biblioteca Pandas, uma 
 ferramenta poderosa para análise de dados em Python.
 
-O que é o Pandas?
+<h5>O que é o Pandas?</h5>
 
 O Pandas é uma biblioteca de código aberto desenvolvida para fornecer estruturas de dados fáceis de 
 usar e ferramentas de análise de dados de alta performance. Ele é construído sobre a linguagem Python 
 e oferece estruturas de dados eficientes para armazenar e manipular dados, além de funções flexíveis 
 para realizar tarefas comuns de análise.
 
-Contexto de Utilização:
+<h5>Contexto de Utilização:</h5>
 
 O Pandas é amplamente utilizado em uma variedade de domínios, incluindo ciência de dados, finanças, 
 economia, pesquisa acadêmica, análise de mercado e muito mais. Ele fornece uma maneira conveniente 
 de importar, limpar, transformar e analisar dados, permitindo que os usuários realizem uma ampla 
 gama de tarefas relacionadas à manipulação e exploração de conjuntos de dados complexos.
 
-Principais Recursos e Funcionalidades:
+<h5>Principais Recursos e Funcionalidades:</h5>
 
 Estruturas de Dados Flexíveis: O Pandas oferece duas estruturas principais: as Séries e os DataFrames.
 Uma Série é uma estrutura unidimensional semelhante a um array ou lista, enquanto um DataFrame é uma
@@ -94,6 +95,6 @@ visualizações para explorar e comunicar insights a partir dos dados
 <h2>Technologies</h2>
 <p>We used the following technologies to build this project:</p>
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=py,panda,vscode,git" />
+    <img src="https://skillicons.dev/icons?i=py,vscode,git" />
 </p>
 
