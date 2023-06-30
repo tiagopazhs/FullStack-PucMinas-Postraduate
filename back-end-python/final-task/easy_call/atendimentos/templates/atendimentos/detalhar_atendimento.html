@@ -1,0 +1,18 @@
+<!-- detalhar_atendimento.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Atendimento</title>
+</head>
+<body>
+    <h1>Detalhes do Atendimento</h1>
+    <h3>ID: {{ atendimento.id }}</h3>
+    <p>Cliente: {{ atendimento.cliente }}</p>
+    <p>Atendente: {{ atendimento.atendente }}</p>
+    <p>Histórico de Conversa:</p>
+    <p>{{ atendimento.historico_conversa }}</p>
+    <a href="{% url 'atualizar_atendimento' atendimento.id %}">Editar Atendimento</a>
+    <a href="{% url 'excluir_atendimento' atendimento.id %}">Excluir Atendimento</a>
+    <a href="{% url 'listar_atendimentos' %}">Voltar para a Lista de Atendimentos</a>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- atualizar_atendimento.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atualizar Atendimento</title>
+</head>
+<body>
+    <h1>Atualizar Atendimento</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Atualizar</button>
+    </form>
+    <a href="{% url 'detalhar_atendimento' atendimento.id %}">Cancelar</a>
+</body>
+</html>
