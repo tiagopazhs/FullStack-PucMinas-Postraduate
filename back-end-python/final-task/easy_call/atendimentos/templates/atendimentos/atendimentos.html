@@ -1,4 +1,4 @@
-<!-- atendimentos.html -->
+<!-- listar_atendimentos.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,10 +8,11 @@
     <h1>Lista de Atendimentos</h1>
     <ul>
         {% for atendimento in atendimentos %}
-            <li>{{ atendimento }}</li>
+            <li><a href="{% url 'detalhar_atendimento' atendimento.id %}">{{ atendimento }}</a></li>
         {% empty %}
             <li>Nenhum atendimento registrado.</li>
         {% endfor %}
     </ul>
+    <a href="{% url 'criar_atendimento' %}" class="btn">Criar Novo Atendimento</a>
 </body>
 </html>
