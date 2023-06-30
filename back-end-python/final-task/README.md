@@ -14,15 +14,20 @@
 
 <h4>Result:</h4>
 <p align="center">
-  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/exercicio-3/docs/Create.png" alt="sample" style="width: 30%">  
-  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/exercicio-3/docs/ReadAll.png" alt="sample" style="width: 30%">
-  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/exercicio-3/docs/ReadOne.png" alt="sample" style="width: 30%">
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/final-task/docs/logs-1.png" alt="sample" style="width: 90%">  
+
+ 
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/final-task/docs/logs-3.png" alt="sample" style="width: 45%">
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/final-task/docs/logs-2.png" alt="sample" style="width: 45%">
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/final-task/docs/logs-3.png" alt="sample" style="width: 45%">
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/final-task/docs/logs-4.png" alt="sample" style="width: 45%">
+  
 </p>
 
 
 <h2>Technologies</h2>
 <p>We used the following technologies to build this project:</p>
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=py,django,html,sqlite,postman,vscode,git" />
+    <img src="https://skillicons.dev/icons?i=py,django,html,bootstrap,sqlite,postman,vscode,git" />
 </p>
 
