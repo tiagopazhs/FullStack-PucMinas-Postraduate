@@ -4,8 +4,9 @@ from .models import Atendimento
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Atendimento
 from .serializers import AtendimentoSerializer
+from django.views import View
+from django.http import HttpResponse
 
 
 def atendimentos_list(request):
@@ -15,8 +16,13 @@ def atendimentos_list(request):
     }
     return JsonResponse(data)
 
-class AtendimentoListAPIView(APIView):
+class AtendimentoListAPIView(View):
     def get(self, request):
-        atendimentos = Atendimento.objects.all()
-        serializer = AtendimentoSerializer(atendimentos, many=True)
-        return Response(serializer.data)
+        # Assuming you want to retrieve a list of atendimentos
+        atendimentos = ["Atendimento 1", "Atendimento 2", "Atendimento 3"]
+
+        # Format the atendimentos as a string
+        atendimentos_str = "\n".join(atendimentos)
+
+        # Return the atendimentos as a response
+        return HttpResponse(atendimentos_str)
