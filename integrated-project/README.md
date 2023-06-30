@@ -26,8 +26,10 @@
 <h4>Result:</h4>
 
 <p align="center">
-  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/back-end-python/exercicio-2/docs/logs.png" alt="sample" style="width: 80%"> 
+  <img src="https://github.com/tiagopazhs/FullStack-PucMinas-Postraduate/blob/main/integrated-project/print.png" alt="sample" style="width: 100%"> 
 </p>
+
+
 
 <pre >
 
