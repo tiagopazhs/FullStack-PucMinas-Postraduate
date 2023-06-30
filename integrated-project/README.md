@@ -31,18 +31,18 @@
 
 <pre >
 
-  <h5>Contexto do sistema:</h5>
+  <h4>Contexto do sistema:</h4>
   O sistema proposto é uma plataforma online que oferece aulas gratuitas de inglês para pessoas de baixa renda. O objetivo principal é promover a inclusão social e facilitar o acesso à educação de qualidade para aqueles que não têm condições de arcar com custos de cursos particulares.
   
   A plataforma será composta por aulas virtuais interativas, materiais didáticos, exercícios práticos e recursos de suporte, que permitirão aos usuários aprenderem e aprimorarem suas habilidades no idioma inglês de forma autônoma. Além disso, a plataforma também fornecerá um ambiente de comunidade, onde os alunos poderão interagir entre si e com os instrutores, compartilhando experiências, dúvidas e conquistas.
   
-  Contêiner:
+  <h4>Contêiner:</h4>
   Um contêiner essencial para o funcionamento da plataforma é o servidor de aplicativos. Esse contêiner será responsável por hospedar e executar a aplicação web da plataforma, permitindo que os usuários acessem e utilizem todos os recursos disponíveis.
   
-  Componente:
+  <h4>Componente:</h4>
   Um componente importante para o sistema é o módulo de gerenciamento de aulas. Esse componente permitirá que os instrutores criem e programem aulas, definindo conteúdos, datas, horários e demais informações relevantes. Os alunos poderão visualizar o cronograma de aulas, se inscrever para participar delas e receber notificações sobre as próximas aulas.
   
-  Demais modelos:
+  <h4>Demais modelos:</h4>
   Além do contêiner e do componente mencionados, o projeto também pode envolver outros modelos, dependendo das necessidades específicas. Alguns exemplos possíveis são:
   
   Modelo de autenticação: Para permitir que os usuários façam login na plataforma de forma segura e tenham acesso aos recursos adequados, será necessário um modelo de autenticação robusto. Isso pode envolver a implementação de um sistema de login com autenticação de dois fatores, proteção contra ataques de força bruta e outras medidas de segurança.
@@ -51,7 +51,7 @@
   
   Modelo de suporte ao cliente: Para garantir um bom atendimento e suporte aos usuários, um modelo de suporte ao cliente pode ser implementado. Isso pode incluir um sistema de tickets de suporte, chat ao vivo com agentes de suporte e um banco de conhecimento com respostas para perguntas frequentes.
   
-  Modelo de deployment:
+  <h4>Modelo de deployment:</h4>
   O modelo de deployment envolve a infraestrutura e os processos necessários para implantar e manter a plataforma em produção. Algumas considerações a serem abordadas no modelo de deployment podem incluir:
   
   Escalabilidade: O sistema deve ser projetado para lidar com um aumento no número de usuários e demanda por recursos. Isso pode envolver a utilização de serviços em nuvem escaláveis, como o AWS Elastic Beanstalk ou o Kubernetes, que permitem ajustar automaticamente a capacidade de processamento e armazenamento conforme necessário.
