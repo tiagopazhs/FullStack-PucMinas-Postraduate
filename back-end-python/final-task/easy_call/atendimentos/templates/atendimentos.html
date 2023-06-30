@@ -1,0 +1,17 @@
+<!-- atendimentos.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Atendimentos</title>
+</head>
+<body>
+    <h1>Lista de Atendimentos</h1>
+    <ul>
+        {% for atendimento in atendimentos %}
+            <li>{{ atendimento }}</li>
+        {% empty %}
+            <li>Nenhum atendimento registrado.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
