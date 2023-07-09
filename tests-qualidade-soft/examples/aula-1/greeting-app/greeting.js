@@ -1,9 +1,15 @@
 const greet = (name)  => {
-    if (name.length === 0) {
-        throw Error('Argumento nome não pode ser vazio')
+
+    // if (name.length === '') {
+    //     throw 'Name cannot be empty'
+    // }
+
+    if (name === undefined) {
+        throw 'Name cannot be undefined'
     }
 
-    return `Olá ${name}, seja bem vindo ao curso de Desenvolvimento WEB`
+    return `Hello ${name}, this is Brazil`
+    
 }
 
 module.exports = greet
