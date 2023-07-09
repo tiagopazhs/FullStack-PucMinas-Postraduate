@@ -1,0 +1,6 @@
+Requisitos não funcionais: 
+    Software usar Mysql, Usar javascript.
+
+Requisitos funcionais: 
+    Usuário ser bloqueado após 3 tentativas.
+
