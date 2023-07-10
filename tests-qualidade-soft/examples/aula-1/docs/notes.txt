@@ -4,3 +4,9 @@ Requisitos não funcionais:
 Requisitos funcionais: 
     Usuário ser bloqueado após 3 tentativas.
 
+Complexidade simplomática === quantidade de ifs e de testes que serão necessários para realizar um teste de unidade
+
+O Sonar é uma ferramenta que faz essa contagem de quantas coisas o método está fazendo.
+
+P: O Teste de Software que metrifica o nível com que o software faz uso dos recursos do sistema e em situações normais corresponde à:
+R: teste de sistema 
