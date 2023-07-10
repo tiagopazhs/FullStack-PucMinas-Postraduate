@@ -1,0 +1,11 @@
+Describe is used to group a swift of tests.
+
+BeforeAll is executed after all
+
+BeforeEach is executed before every tests
+
+
+Unit test use Mock
+Integration test use db
+
+One test cannot depend of another test
