@@ -9,3 +9,10 @@ Unit test use Mock
 Integration test use db
 
 One test cannot depend of another test
+
+
+!IMPORTANT!
+Comand npm run test -- --watch
+    This is used to monitoring tests (similar nodemon)
+comande --coverage
+    How many percent the lines has coverage tests
