@@ -1,18 +1,43 @@
-Describe is used to group a swift of tests.
+NOTES:
 
-BeforeAll is executed after all
+    Describe is used to group a swift of tests.
 
-BeforeEach is executed before every tests
+    BeforeAll is executed after all
+
+    BeforeEach is executed before every tests
+
+    Unit test use Mock
+    Integration test use db
+
+    One test cannot depend of another test
+
+    Spy:
+        .toHaveBeenCalledWith(1)
+        Verify if the test was really executed
 
 
-Unit test use Mock
-Integration test use db
 
-One test cannot depend of another test
+!IMPORTANT COMANDS!
+    Comand npm run test -- --watch
+        This is used to monitoring tests (similar nodemon)
+    Comand --coverage
+        How many percent the lines has coverage tests
 
 
-!IMPORTANT!
-Comand npm run test -- --watch
-    This is used to monitoring tests (similar nodemon)
-comande --coverage
-    How many percent the lines has coverage tests
+
+IMPORTANT NOTES
+
+    A função disponível no Jest que utilizamos para descrever uma funcionalidade é a função...
+    describe() 
+
+    Considerando que todos os cenários de teste de uma determinada feature compartilham uma conexão ativa com o banco de dados, qual seria o melhor momento para criar essa conexão?
+    na função beforeAll() 
+
+    Espera-se que cada cenário de teste conheça exatamente o estado atual dos recursos que ele consome. Ex: banco de dados, arquivo em disco e etc. Isto posto, qual função abaixo é a mais indicada para "limpar" os recursos antes de executar cada cenário?
+    beforeEach() 
+
+    Podemos afirmar que dublês (mocks)...
+    simulam o comportamento de uma unidade dependente 
+
+    Os espiões (spy) ajudam a garantir que ...
+    a comunicação com as unidades dependentes está sendo feita corretamente .
