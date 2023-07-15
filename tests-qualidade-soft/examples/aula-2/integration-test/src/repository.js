@@ -29,6 +29,10 @@ class EventRepository {
         return await this.collection.findOne({_id: new mongo.ObjectId(id)});
     }
     
+    async delete(event) {
+        await this.collection.deleteOne({_id: event._id});
+    }
+    
 }
 
 module.exports = EventRepository;

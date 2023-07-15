@@ -87,5 +87,21 @@ describe("EventRepository", () => {
         
     } );
 
-    test.todo('Respository must delete an event (D)');
+    test('Respository must delete an event (D)', async() => {
+
+        // 1. Db must be empty.
+        
+        // 2. Event must exists.
+        const event = await repository.create({
+            name: 'Rock in Rio',
+            date: '2024-02-07'
+        })
+        
+        // 3. Remove the event
+        await repository.delete(event);
+
+        // 4. Check if the event was deleted.
+        const events = await repository.findAll();
+        expect(events.length).toBe(0);
+    });
 });
