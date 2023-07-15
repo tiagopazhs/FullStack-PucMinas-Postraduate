@@ -21,10 +21,13 @@ describe("EventRepository", () => {
             name: 'Rock in Rio',
             date: '2024-02-07'
         }));
-        
+
         const events = await repository.findAll();
 
         expect(events.length).toBe(1);
-
+    
     })
+    test.todo('Respository must show all events (R)');
+    test.todo('Respository must update an event (U)');
+    test.todo('Respository must delete an event (D)');
 });
