@@ -2,7 +2,7 @@ const EventRepository = require("./repository");
 const {MongoClient} = require("mongodb");
 
 describe("EventRepository", () => {
-    test("repository should create a new event", async () => {
+    test("repository should create a new event (C)", async () => {
 
         const dsn = 'mongodb://root:root@localhost?retryWrites=true&writeConcern=majority'
         client = new MongoClient(dsn);
@@ -22,6 +22,9 @@ describe("EventRepository", () => {
             date: '2024-02-07'
         }));
         
+        const events = await repository.findAll();
+
+        expect(events.length).toBe(1);
 
     })
 });
