@@ -6,6 +6,10 @@ class EventRepository {
         this.collection = collection;
     }
 
+    async deleteAll() {
+        await this.collection.deleteMany({});
+    }
+
     async create(event) {
         await this.collection.insertOne(event);
         return event;

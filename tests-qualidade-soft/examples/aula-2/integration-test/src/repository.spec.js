@@ -2,14 +2,28 @@ const EventRepository = require("./repository");
 const {MongoClient} = require("mongodb");
 
 describe("EventRepository", () => {
-    test("repository should create a new event (C)", async () => {
 
+    let repository;
+    let client;
+
+    beforeAll(async() => {
         const dsn = 'mongodb://root:root@localhost?retryWrites=true&writeConcern=majority'
         client = new MongoClient(dsn);
         await client.connect();
         const collection = client.db('app_db').collection('events');
-        
-        const repository = new EventRepository(collection);
+        repository = new EventRepository(collection);
+    });
+
+    //close db connection after all
+    afterAll(async() => {
+        await client.close();
+    });
+
+    beforeEach(async() => {
+        await repository.deleteAll();
+    });
+
+    test("repository should create a new event (C)", async () => {
 
         const result = await repository.create({
             name: 'Rock in Rio',
@@ -27,14 +41,8 @@ describe("EventRepository", () => {
         expect(events.length).toBe(1);
     
     })
-    test('Respository must show all events (R)', async () => {
 
-        const dsn = 'mongodb://root:root@localhost?retryWrites=true&writeConcern=majority'
-        client = new MongoClient(dsn);
-        await client.connect();
-        const collection = client.db('app_db').collection('events');
-        
-        const repository = new EventRepository(collection);
+    test('Respository must show all events (R)', async () => {
 
         await repository.create({
             name: 'Rock in Rio',
@@ -45,16 +53,17 @@ describe("EventRepository", () => {
 
         expect(result.length).toBe(1);
 
-        expect(result.length).toStrictEqual(
-            expect.objectContaining([
+        expect(result[0]).toStrictEqual(
+            expect.objectContaining(
                 {
                     name: 'Rock in Rio',
                     date: '2024-02-07'
                 }
-            ])
+            )
         )
 
     });
+
     test.todo('Respository must update an event (U)');
     test.todo('Respository must delete an event (D)');
 });
