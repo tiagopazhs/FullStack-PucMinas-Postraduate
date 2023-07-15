@@ -28,8 +28,13 @@ class EventRepository {
     async findById(id) {
         return await this.collection.findOne({_id: new mongo.ObjectId(id)});
     }
-    
+
     async delete(event) {
+
+        if (event._id === undefined) {
+            throw new Error('Invalid event');
+        }
+
         await this.collection.deleteOne({_id: event._id});
     }
     

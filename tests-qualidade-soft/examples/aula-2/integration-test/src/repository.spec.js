@@ -104,4 +104,16 @@ describe("EventRepository", () => {
         const events = await repository.findAll();
         expect(events.length).toBe(0);
     });
+
+    test('Repository cannot allow an event without id', async () => {
+
+        const event = {
+            name: 'Rock in Rio',
+            date: '2024-08-20'
+        };
+
+        const expression = () => repository.delete(event);
+        await expect(expression).rejects.toThrow('Invalid event');
+    });
+    
 });
