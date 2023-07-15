@@ -1,3 +1,5 @@
+const mongo = require('mongodb');
+
 class EventRepository {
 
     collection;
@@ -17,6 +19,14 @@ class EventRepository {
 
     async findAll() {
         return (await this.collection.find({})).toArray();
+    }
+
+    async update(event) {
+        await this.collection.updateOne({_id: event._id}, {$set: event});
+    }
+
+    async findById(id) {
+        return await this.collection.findOne({_id: new mongo.ObjectId(id)});
     }
     
 }

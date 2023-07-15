@@ -67,12 +67,23 @@ describe("EventRepository", () => {
     test('Respository must update an event (U)', async() => {
 
         // 1. Db must be empty.
-        
+
         // 2. Insert an event.
-        
+        const event = await repository.create({
+            name: 'Rock in Rio',
+            date: '2024-02-07'
+        })
+
         // 3. Update the event.
-        
+        event.date = '2024-07-15';
+        await repository.update(event);
+
         // 4. Test if the event was update with success.
+        const result = await repository.findById(event._id);
+        expect(result).toStrictEqual(expect.objectContaining({
+            name: 'Rock in Rio',
+            date: '2024-07-15'
+        }))
         
     } );
 
