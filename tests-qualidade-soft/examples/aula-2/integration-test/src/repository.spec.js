@@ -64,6 +64,17 @@ describe("EventRepository", () => {
 
     });
 
-    test.todo('Respository must update an event (U)');
+    test('Respository must update an event (U)', async() => {
+
+        // 1. Db must be empty.
+        
+        // 2. Insert an event.
+        
+        // 3. Update the event.
+        
+        // 4. Test if the event was update with success.
+        
+    } );
+
     test.todo('Respository must delete an event (D)');
 });
