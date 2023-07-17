@@ -11,7 +11,7 @@ describe("EventRepository", () => {
         client = new MongoClient(dsn);
         await client.connect();
         const collection = client.db('app_db').collection('events');
-        repository = new EventRepository(collection);
+        repository = EventRepository(collection);
     });
 
     //close db connection after all
@@ -98,7 +98,7 @@ describe("EventRepository", () => {
         })
         
         // 3. Remove the event
-        await repository.delete(event);
+        await repository.deleteEvent(event);
 
         // 4. Check if the event was deleted.
         const events = await repository.findAll();
@@ -112,7 +112,7 @@ describe("EventRepository", () => {
             date: '2024-08-20'
         };
 
-        const expression = () => repository.delete(event);
+        const expression = () => repository.deleteEvent(event);
         await expect(expression).rejects.toThrow('Invalid event');
     });
     

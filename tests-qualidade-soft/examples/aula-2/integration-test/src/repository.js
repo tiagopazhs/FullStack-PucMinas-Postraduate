@@ -1,42 +1,44 @@
 const mongo = require('mongodb');
 
-class EventRepository {
+function EventRepository(collection) {
 
-    collection;
-
-    constructor(collection) {
-        this.collection = collection;
+    async function deleteAll() {
+        await collection.deleteMany({});
     }
-
-    async deleteAll() {
-        await this.collection.deleteMany({});
-    }
-
-    async create(event) {
-        await this.collection.insertOne(event);
+    
+    async function create(event) {
+        await collection.insertOne(event);
         return event;
     }
-
-    async findAll() {
-        return (await this.collection.find({})).toArray();
+    
+    async function findAll() {
+        return (await collection.find({})).toArray();
     }
-
-    async update(event) {
-        await this.collection.updateOne({_id: event._id}, {$set: event});
+    
+    async function update(event) {
+        await collection.updateOne({ _id: event._id }, { $set: event });
     }
-
-    async findById(id) {
-        return await this.collection.findOne({_id: new mongo.ObjectId(id)});
+    
+    async function findById(id) {
+        return await collection.findOne({ _id: new mongo.ObjectId(id) });
     }
-
-    async delete(event) {
-
+    
+    async function deleteEvent(event) {
         if (event._id === undefined) {
             throw new Error('Invalid event');
         }
-
-        await this.collection.deleteOne({_id: event._id});
+    
+        await collection.deleteOne({ _id: event._id });
     }
+    
+    return {
+        deleteAll,
+        create,
+        findAll,
+        update,
+        findById,
+        deleteEvent
+    };
     
 }
 
