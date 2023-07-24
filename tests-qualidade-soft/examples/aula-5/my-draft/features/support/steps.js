@@ -5,6 +5,24 @@ const container = app.get('container');
 const request = require('supertest')(app);
 const mongo = require("mongodb");
 
+Before("@database", async function () {
+    const repository = await container.getRepository();
+    await repository.deleteAll();
+});
+
+Given('there is the event:', async (eventJson) => {
+    const parsedEvent = JSON.parse(eventJson);
+
+    //implementation just to remove the " _ " from the id
+    if (parsedEvent.id) {
+        parsedEvent._id = new mongo.ObjectId(parsedEvent.id);
+        delete parsedEvent.id;
+    }
+
+    const repository = await container.getRepository();
+    await repository.create(parsedEvent);
+});
+
 When('I send a {string} request to {string}', async (method, path) => {
     this.response = await request[method.toLowerCase()](path);
 });
