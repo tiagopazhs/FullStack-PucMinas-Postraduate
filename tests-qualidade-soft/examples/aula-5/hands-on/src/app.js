@@ -1,4 +1,3 @@
-const EventRepository = require("./repository");
 const express = require('express');
 const Container = require("./container");
 const cors = require('cors')
