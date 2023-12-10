@@ -7,4 +7,5 @@ Main subjects:
 - Tests
 - front end
 - back end (python)
-- Agile methodology 
+- Agile methodology
+- Project management 
